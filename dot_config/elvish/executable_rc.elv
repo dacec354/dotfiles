@@ -1,14 +1,15 @@
 use path
 use os
 use str
-
-# ai-agent frontends              ~/.config/elvish/lib/ai-agent.elv
+# serects/keys                       ~/.config/elvish/lib/serects.elv
+use serects
+# ai-agent frontends                 ~/.config/elvish/lib/ai-agent.elv
 use ai-agent
-# command alias                   ~/.config/elvish/lib/alias.elv
+# command alias                      ~/.config/elvish/lib/alias.elv
 use alias
-# software startup script execute ~/.config/elvish/lib/startup.elv
+# software startup script execute    ~/.config/elvish/lib/startup.elv
 use startup
-# windows path                    ~/.config/elvish/lib/windows-path.elv
+# windows path                       ~/.config/elvish/lib/windows-path.elv
 use windows-path
 
 # add bins of opt to E:PATH
