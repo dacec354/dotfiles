@@ -1,0 +1,24 @@
+[language-server.cangjie-lsp]
+command = "LSPServer"
+# args = ""
+
+[language-server.cangjie-lsp.config]
+
+[language-server.cangjie-lsp.environment]
+CANGJIE_HOME = ""
+
+
+[[languages]]
+name = "cangjie"
+scope = "source.cangjie"
+injection-regex = "cangjie"
+file-types = ["cj"]
+roots = ["cjpm.toml", "cjpm.lock"]
+comment-tokens = ["//"]
+block-comment-tokens = { start = "/*", end = "*/" }
+indent = { unit = "    ", tab-width = 4 }
+language-servers = ["cangjie-lsp"]
+
+[[grammers]]
+name = "cangjie"
+source = { git = "https://gitcode.com/Cangjie-SIG/tree-sitter-cangjie", rev = "3d3ae78ad1e42bd806f31f1171357c9f72250e28" }

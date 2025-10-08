@@ -1,0 +1,13 @@
+theme = "tokyonight_moon"
+
+[editor]
+true-color = true
+bufferline = "multiple"
+color-modes = true
+shell = ["elvish", "-c"]
+line-number = "relative"
+cursorline = true
+cursorcolumn = true
+
+[keys.insert]
+j = { k = "normal_mode" }
