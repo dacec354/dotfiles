@@ -1,0 +1,2 @@
+*.so # ignore build outputs
+.config/helix/runtime/grammars/** # ingore helix tree-sitter builds

@@ -7,10 +7,6 @@ use serects
 use ai-agent
 # command alias                      ~/.config/elvish/lib/alias.elv
 use alias
-# software startup script execute    ~/.config/elvish/lib/startup.elv
-use startup
-# windows path                       ~/.config/elvish/lib/windows-path.elv
-use windows-path
 
 # add bins of opt to E:PATH
 for dir [/opt/*/] {
@@ -19,6 +15,12 @@ for dir [/opt/*/] {
     set-env PATH $bin-dir':'$E:PATH
   }
 }
+# software startup script execute    ~/.config/elvish/lib/startup.elv
+use startup
+# windows path                       ~/.config/elvish/lib/windows-path.elv
+use windows-path
+# add ssh-keys                       ~/.config/elvish/lib/ssh-agent.elv
+use ssh-agent
 
 # add cargo bin
 set-env PATH (get-env HOME)"/.cargo/bin:"(get-env PATH)
@@ -30,4 +32,5 @@ edit:add-vars [
   # alias
   &hx~= $alias:hx~
   &vi~= $alias:vi~
+  &che~= $alias:che~
 ]

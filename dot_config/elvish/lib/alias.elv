@@ -7,3 +7,8 @@ fn vi {|@args|
 fn hx {|@args|
   e:helix $@args
 }
+
+# chezmoi alias
+fn che {|@args|
+  e:chezmoi $@args
+}
