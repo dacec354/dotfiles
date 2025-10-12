@@ -1,0 +1,16 @@
+[user]
+name = dacec354
+email = dacec354@outlook.com
+; [http]
+; 	proxy = http://172.24.0.1:10811
+; [https]
+; 	proxy = http://172.24.0.1:10811
+
+[core]
+editor = helix
+autocrlf = input
+pager = more
+
+[i18n]
+commitencoding = utf-8
+logoutputencoding = utf-8
