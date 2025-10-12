@@ -21,6 +21,8 @@ use startup
 use windows-path
 # add ssh-keys                       ~/.config/elvish/lib/ssh-agent.elv
 use ssh-agent
+# add git completion                       ~/.config/elvish/lib/git-completion.elv
+use git-completion
 
 # add cargo bin
 set-env PATH (get-env HOME)"/.cargo/bin:"(get-env PATH)
