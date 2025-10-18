@@ -7,5 +7,8 @@ selection_transparent = "#2A1F5A"  # darker slate blue selection
 "ui.cursor" = { fg = "cursor_fg", bg = "darker_cursor_bg"}
 "ui.cursor.primary" = { fg = "cursor_fg", bg = "cursor_bg"}
 
+# command indicator background
+"ui.text.info" = { fg = "menu_fg" }
+
 [palette]
 darker_cursor_bg = "#BA82A8"
