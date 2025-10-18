@@ -1,0 +1,11 @@
+inherits = "nyxvamp-transparent"
+
+# distinguish between selection and primary selection
+selection_transparent = "#2A1F5A"  # darker slate blue selection
+
+# distinguish bewteen cursor and primary cursor
+"ui.cursor" = { fg = "cursor_fg", bg = "darker_cursor_bg"}
+"ui.cursor.primary" = { fg = "cursor_fg", bg = "cursor_bg"}
+
+[palette]
+darker_cursor_bg = "#BA82A8"
