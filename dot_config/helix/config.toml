@@ -1,4 +1,4 @@
-theme = "nyxvamp-transparent"
+theme = "custom_transparent"
 
 [editor]
 true-color = true
@@ -8,6 +8,18 @@ shell = ["elvish", "-c"]
 line-number = "relative"
 cursorline = true
 cursorcolumn = true
+# popup-border = "all"
+
+[editor.statusline]
+right = [
+  "diagnostics",
+  "selections",
+  "register",
+  "position",
+  "file-encoding",
+  "spacer",
+  "version-control"
+]
 
 [keys.insert]
 j = { k = "normal_mode" }
