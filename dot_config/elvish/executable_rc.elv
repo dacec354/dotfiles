@@ -7,14 +7,8 @@ use serects
 use ai-agent
 # command alias                      ~/.config/elvish/lib/alias.elv
 use alias
-
-# add bins of opt to E:PATH
-for dir [/opt/*/] {
-  var bin-dir = (path:join $dir 'bin')
-  if (os:is-dir $bin-dir) {
-    set-env PATH $bin-dir':'$E:PATH
-  }
-}
+# add bins                           ~/.config/elvish/lib/add-bins.elv
+use add-bins
 # software startup script execute    ~/.config/elvish/lib/startup.elv
 use startup
 # windows path                       ~/.config/elvish/lib/windows-path.elv
@@ -23,9 +17,6 @@ use windows-path
 use ssh-agent
 # add git completion                       ~/.config/elvish/lib/git-completion.elv
 use git-completion
-
-# add cargo bin
-set-env PATH (get-env HOME)"/.cargo/bin:"(get-env PATH)
 
 edit:add-vars [
   # ai-agent
