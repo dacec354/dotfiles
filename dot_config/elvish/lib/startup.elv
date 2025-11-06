@@ -14,7 +14,11 @@ var m = [
   &fnm= { eval (fnm env --shell fish | slurp | str:replace "set -gx" set-env (one) | str:replace " $PATH" "\":\"(get-env PATH)" (one))}
 
   # mise general version manager
-  &mise= { eval (mise activate elvish)}
+  &mise= {
+    var mise: = (ns [&])
+    eval (mise activate elvish | slurp) &ns=$mise: &on-end={|ns| set mise: = $ns }
+    mise:activate
+  }
 ]
 
 for name [(keys $m)] {
