@@ -23,7 +23,6 @@ edit:add-vars [
   &qwen~= $ai-agent:qwen~
   &claude~= $ai-agent:claude~
   # alias
-  &hx~= $alias:hx~
   &vi~= $alias:vi~
   &che~= $alias:che~
 ]
