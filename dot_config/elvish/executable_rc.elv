@@ -17,6 +17,8 @@ use windows-path
 use ssh-agent
 # add git completion                       ~/.config/elvish/lib/git-completion.elv
 use git-completion
+# add proxy                          ~/.config/elvish/lib/proxy.elv
+use proxy
 
 edit:add-vars [
   # ai-agent
@@ -25,4 +27,7 @@ edit:add-vars [
   # alias
   &vi~= $alias:vi~
   &che~= $alias:che~
+  # proxy
+  &set-proxy~= $proxy:set-proxy~
+  &unset-proxy~= $proxy:unset-proxy~
 ]
