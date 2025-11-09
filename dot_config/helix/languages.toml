@@ -1,14 +1,4 @@
-[language-server.cangjie-lsp]
-command = "LSPServer"
-# args = ""
-
-[language-server.cangjie-lsp.config]
-
-[language-server.cangjie-lsp.environment]
-CANGJIE_HOME = ""
-
-
-[[languages]]
+ [[languages]]
 name = "cangjie"
 scope = "source.cangjie"
 injection-regex = "cangjie"
@@ -17,8 +7,16 @@ roots = ["cjpm.toml", "cjpm.lock"]
 comment-tokens = ["//"]
 block-comment-tokens = { start = "/*", end = "*/" }
 indent = { unit = "    ", tab-width = 4 }
-language-servers = ["cangjie-lsp"]
 
 [[grammers]]
 name = "cangjie"
 source = { git = "https://gitcode.com/Cangjie-SIG/tree-sitter-cangjie", rev = "3d3ae78ad1e42bd806f31f1171357c9f72250e28" }
+
+[language-server.zls.config]
+inlay_hints_show_variable_type_hints = true
+inlay_hints_hide_redundant_param_names = true
+inlay_hints_hide_redundant_param_names_last_token = true
+enable_build_on_save = true
+force_autofix = true
+warn_style = true
+skip_std_references = true
