@@ -23,4 +23,4 @@ right = [
 
 [editor.lsp]
 display-inlay-hints = true
-inlay-hints-length-limit = 20
+# inlay-hints-length-limit = 40
