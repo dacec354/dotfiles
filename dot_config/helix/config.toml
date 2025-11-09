@@ -21,5 +21,6 @@ right = [
   "version-control"
 ]
 
-[keys.insert]
-j = { k = "normal_mode" }
+[editor.lsp]
+display-inlay-hints = true
+inlay-hints-length-limit = 20
