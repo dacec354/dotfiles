@@ -9,7 +9,6 @@ email = dacec354@outlook.com
 [core]
 editor = helix
 autocrlf = input
-pager = more
 
 [i18n]
 commitencoding = utf-8
