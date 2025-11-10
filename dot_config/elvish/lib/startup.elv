@@ -18,6 +18,8 @@ var m = [
     var mise: = (ns [&])
     eval (mise activate elvish | slurp) &ns=$mise: &on-end={|ns| set mise: = $ns }
     mise:activate
+    # eval "edit:add-var mise~ {|@args| mise:mise $@args }"
+    edit:add-var mise~ {|@args| mise:mise $@args }
   }
 ]
 
