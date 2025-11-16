@@ -1,4 +1,4 @@
-theme = "ayu_mirage"
+theme = "darcula-solid"
 
 [editor]
 true-color = true
