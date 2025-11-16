@@ -1,5 +1,5 @@
 # claude code with different model
-fn claude {|@platform|
+fn claude {|@args|
   var platforms = [
     &deepseek= [
       &name= DeepSeek
@@ -19,8 +19,8 @@ fn claude {|@platform|
 
   # Default to DeepSeek if no platform specified
   var selected_platform = deepseek
-  if (count $platform | > (one) 0) {
-    set selected_platform = $platform[0]
+  if (count $args | > (one) 0) {
+    set selected_platform = $args[0]
   }
 
   if (not (has-key $platforms $selected_platform)) {
