@@ -10,7 +10,7 @@ cursorline = true
 cursorcolumn = true
 completion-replace = true
 popup-border = "all"
-end-of-line-diagnostics = "warning"
+end-of-line-diagnostics = "hint"
 
 [editor.statusline]
 right = [
@@ -35,4 +35,4 @@ enable = true
 
 [editor.inline-diagnostics]
 cursor-line = "hint"
-other-lines = "error"
+# other-lines = "error"
