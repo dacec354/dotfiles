@@ -68,7 +68,7 @@ local keys = {
   { key = 'r',          mods = mod.SUPER_REV,     action = act.EmitEvent('tabs.manual-update-tab-title') },
 
   -- tab: hide tab-bar
-  { key = 'h',          mods = mod.SUPER_REV,     action = act.EmitEvent('tabs.toggle-tab-bar'), },
+  { key = 'i',          mods = mod.SUPER_REV,     action = act.EmitEvent('tabs.toggle-tab-bar'), },
 
   -- window --
   -- window: spawn windows
