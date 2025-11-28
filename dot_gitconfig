@@ -7,7 +7,7 @@ email = dacec354@outlook.com
 ; 	proxy = http://172.24.0.1:10811
 
 [core]
-editor = helix
+editor = hx
 autocrlf = input
 
 [i18n]
