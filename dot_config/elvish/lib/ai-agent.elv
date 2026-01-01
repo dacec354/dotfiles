@@ -15,6 +15,11 @@ fn claude {|@args|
       &model= kimi-k2-0905-preview
       &small_model= kimi-k2-0905-preview
     ]
+    &claude= [
+      &name= "Claude Mirro"
+      &base_url= https://code.aitianhu5.top/openai
+      &env_key= AITIANHU_API_KEY
+    ]
   ]
 
   # Default to DeepSeek if no platform specified
