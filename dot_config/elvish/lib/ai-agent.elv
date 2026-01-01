@@ -18,7 +18,7 @@ fn claude {|@args|
     &claude= [
       &name= "Claude Mirro"
       &base_url= https://code.aitianhu5.top/openai
-      &env_key= AITIANHU_API_KEY
+      &env_key= ANTHROPIC_AUTH_TOKEN
     ]
   ]
 
